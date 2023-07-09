@@ -39,3 +39,38 @@ echo My name is $name
 # it will not give the result as intended
 echo $10val
 
+# cat command -> display contents of a file in the terminal
+
+# Display the contents of a file
+echo "Displaying contents of file1:"
+cat file1
+
+# Concatenate multiple files
+echo -e "\nConcatenating file2 and file3 into output_file:"
+cat file2 file3 > output_file
+
+# Create a new file
+echo -e "\nCreating a new file named new_file:"
+echo "This is the content of the new file" | cat > new_file
+
+# Append to an existing file
+echo -e "\nAppending to existing_file:"
+echo "This is additional content" | cat >> existing_file
+
+# Display line numbers with file contents
+echo -e "\nDisplaying file4 with line numbers:"
+cat -n file4
+
+# Display non-printable characters (with control characters)
+echo -e "\nDisplaying file5 with non-printable characters:"
+cat -v file5
+
+
+
+# pipe operator
+# | -> pipe operator => execute two commands one after the other
+
+# The pipe operator (|) in Unix-like systems is used to connect the output of one command 
+# to the input of another command, 
+# allowing you to create powerful and flexible command pipelines
+
